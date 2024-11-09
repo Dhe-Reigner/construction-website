@@ -1,14 +1,15 @@
-
-
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" style="background-image: url(assets/img/page-title-bg.jpg);">
+    <div class="page-title dark-background" style="background-image: url({% static 'assets/img/page-title-bg.jpg' %});">
       <div class="container position-relative">
         <h1>Blog</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../">Home</a></li>
             <li class="current">Blog</li>
           </ol>
         </nav>
@@ -25,7 +26,7 @@
             <article class="position-relative h-100">
 
               <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
+                <img src="{% static 'assets/img/blog/blog-1.jpg' %}" class="img-fluid" alt="">
                 <span class="post-date">December 12</span>
               </div>
 
@@ -49,7 +50,7 @@
 
                 <hr>
 
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <a href="../blog-details" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
 
               </div>
 
@@ -60,7 +61,7 @@
             <article class="position-relative h-100">
 
               <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
+                <img src="{% static 'assets/img/blog/blog-2.jpg' %}" class="img-fluid" alt="">
                 <span class="post-date">March 19</span>
               </div>
 
@@ -84,7 +85,7 @@
 
                 <hr>
 
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <a href="../blog-details" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
 
               </div>
 
@@ -95,7 +96,7 @@
             <article class="position-relative h-100">
 
               <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
+                <img src="{% static 'assets/img/blog/blog-3.jpg' %}" class="img-fluid" alt="">
                 <span class="post-date">June 24</span>
               </div>
 
@@ -119,7 +120,7 @@
 
                 <hr>
 
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <a href="../blog-details" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
 
               </div>
 
@@ -130,7 +131,7 @@
             <article class="position-relative h-100">
 
               <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-4.jpg" class="img-fluid" alt="">
+                <img src="{% static 'assets/img/blog/blog-4.jpg' %}" class="img-fluid" alt="">
                 <span class="post-date">August 05</span>
               </div>
 
@@ -154,7 +155,7 @@
 
                 <hr>
 
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <a href="../blog-details" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
 
               </div>
 
@@ -165,7 +166,7 @@
             <article class="position-relative h-100">
 
               <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-5.jpg" class="img-fluid" alt="">
+                <img src="{% static 'assets/img/blog/blog-5.jpg' %}" class="img-fluid" alt="">
                 <span class="post-date">September 17</span>
               </div>
 
@@ -189,7 +190,7 @@
 
                 <hr>
 
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <a href="../blog-details" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
 
               </div>
 
@@ -200,7 +201,7 @@
             <article class="position-relative h-100">
 
               <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-6.jpg" class="img-fluid" alt="">
+                <img src="{% static 'assets/img/blog/blog-6.jpg' %}" class="img-fluid" alt="">
                 <span class="post-date">December 07</span>
               </div>
 
@@ -224,7 +225,7 @@
 
                 <hr>
 
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <a href="../blog-details" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
 
               </div>
 
@@ -257,5 +258,7 @@
     </section><!-- /Blog Pagination Section -->
 
   </main>
+
+{% endblock content %}
 
   
